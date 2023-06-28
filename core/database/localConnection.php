@@ -15,7 +15,7 @@
             $stconfig = json_decode($jsonConfig, true);
             $this->databaseDsn = "mysql:" . $stconfig["dsn"]["host"] .";dbname=" .$stconfig["dsn"]["name"];
             $this->databaseUser = $stconfig["dsn"]["user"];
-            $this->databasePassword = file_get_contents(ROOT .'/core/keys/database.key');
+            $this->databasePassword = file_get_contents(ROOT .'/config/keys/database.key');
             $this->databaseSettings = [
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, 
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
