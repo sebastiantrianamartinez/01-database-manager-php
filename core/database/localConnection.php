@@ -31,7 +31,6 @@
                 return responser::systemResponse(200, "Success connection", $localConnection);
             } 
             catch(PDOException $e) {
-                systemLog::systemReport("Fatal error " .(string)$e, "database-localconnection");
                 return responser::systemResponse(400, "Unsuccess connection", ["exception" => (string)$e]);
             }
         }
