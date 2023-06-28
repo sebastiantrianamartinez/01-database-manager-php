@@ -1,1 +1,5 @@
-
+"dsn": {
+  "host": "mysql:host=localhost",
+  "name": "database_name",
+  "user": "database_user"
+}
