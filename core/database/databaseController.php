@@ -94,7 +94,6 @@
                 }
             }
             catch(Exception $e){
-                systemLog::report('Database controller error: ' .$e, 'database-' .$action);
                 return responser::systemResponse(400, "Error: " . $e, NULL);
             }
         } 
