@@ -2,7 +2,6 @@
     $_ROOT = dirname(__FILE__, 3);
     define("ROOT", dirname(__FILE__, 3));
     require_once ROOT .'/core/lib/responser.php';
-    require_once ROOT .'/core/logs/systemLog.php';
     
     class databaseController{
         
